@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Project — ARVO</title>
+<meta name="description" content="Case study of a project built by ARVO, a frontend developer." />
+<link rel="icon" href="assets/logo-64.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="ARVO home">
+      <img src="assets/logo-64.png" alt="" class="nav-logo-mark" width="28" height="28" />
+      ARVO
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#work" class="nav-link">Work</a>
+      <a href="index.html#about" class="nav-link">About</a>
+      <a href="index.html#skills" class="nav-link">Skills</a>
+      <a href="index.html#journey" class="nav-link">Journey</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="case-hero">
+    <a href="index.html#work" class="case-back mono">&larr; Back to work</a>
+    <h1 class="case-title" id="cs-title">Loading…</h1>
+    <div class="case-meta" id="cs-tags"></div>
+  </div>
+
+  <div class="case-body" id="cs-body">
+    <!-- filled by script.js based on ?slug= in the URL -->
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo-64.png" alt="ARVO" class="footer-logo-mark" width="32" height="32" />
+      <div>
+        <p class="footer-logo">ARVO</p>
+        <p class="footer-role mono">Frontend Developer</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:hello@arvo.dev">Email</a>
+    </div>
+  </div>
+  <p class="footer-copy mono">© 2026 ARVO. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

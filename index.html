@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARVO — Frontend Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of ARVO, a frontend developer building modern, responsive and interactive web experiences."
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ARVO — Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of ARVO, a frontend developer building modern, responsive and interactive web experiences."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/logo-64.png" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ============ NAV ============ -->
+    <header class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo" aria-label="ARVO home">
+          <img
+            src="assets/logo-64.png"
+            alt=""
+            class="nav-logo-mark"
+            width="28"
+            height="28"
+          />
+          ARVO
+        </a>
+
+        <nav class="nav-links" id="nav-links">
+          <a href="#work" class="nav-link" data-nav>Work</a>
+          <a href="#about" class="nav-link" data-nav>About</a>
+          <a href="#skills" class="nav-link" data-nav>Skills</a>
+          <a href="#journey" class="nav-link" data-nav>Journey</a>
+          <a href="#contact" class="nav-link" data-nav>Contact</a>
+        </nav>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="eyebrow mono">arvo.dev — frontend engineering</p>
+          <h1 class="hero-title">
+            Frontend developer<br />
+            building modern web experiences.
+          </h1>
+          <p class="hero-sub">
+            I build responsive, interactive web applications with a focus on
+            clean UI, solid fundamentals, and continuous improvement.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">View Projects</a>
+            <a
+              href="https://github.com/arvo-parham"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-ghost"
+            >
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.77 10.78.57.1.78-.25.78-.55v-2.15c-3.16.69-3.82-1.36-3.82-1.36-.52-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.28-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.57.23 2.73.11 3.02.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.1v3.11c0 .3.2.65.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"
+                />
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-window-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <pre
+              class="code-window-body"
+            ><code><span class="tok-kw">const</span> <span class="tok-var">developer</span> = {
+  <span class="tok-key">name</span>: <span class="tok-str">"Parham"</span>,
+  <span class="tok-key">role</span>: <span class="tok-str">"Frontend Developer"</span>,
+  <span class="tok-key">stack</span>: [<span class="tok-str">"HTML"</span>, <span class="tok-str">"CSS"</span>, <span class="tok-str">"JavaScript"</span>],
+  <span class="tok-key">status</span>: <span class="tok-str">"building"</span>,
+};</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ WORK ============ -->
+      <section class="section" id="work">
+        <div class="section-inner">
+          <p class="eyebrow mono">01 — Selected Work</p>
+          <h2 class="section-title">Projects I've shipped</h2>
+
+          <div class="project-grid" id="project-grid">
+            <!-- injected by script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="section" id="about">
+        <div class="section-inner section-inner--narrow">
+          <p class="eyebrow mono">02 — About</p>
+          <h2 class="section-title">About</h2>
+          <p class="about-text">
+            I'm Parham, a frontend developer focused on building modern,
+            responsive, and user-friendly web applications. My current focus is
+            frontend development and JavaScript — writing clean interfaces,
+            understanding the fundamentals well, and shipping real, working
+            projects.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section class="section" id="skills">
+        <div class="section-inner">
+          <p class="eyebrow mono">03 — Skills</p>
+          <h2 class="section-title">What I work with</h2>
+
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3 class="skill-group-title">Frontend</h3>
+              <ul class="badge-list">
+                <li class="badge">HTML</li>
+                <li class="badge">CSS</li>
+                <li class="badge">Flexbox</li>
+                <li class="badge">CSS Grid</li>
+                <li class="badge">JavaScript</li>
+                <li class="badge">DOM</li>
+                <li class="badge">Events</li>
+                <li class="badge">Responsive Design</li>
+                <li class="badge">APIs</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group-title">Tools</h3>
+              <ul class="badge-list">
+                <li class="badge">Git</li>
+                <li class="badge">GitHub</li>
+                <li class="badge">VS Code</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group-title">Currently Learning</h3>
+              <ul class="badge-list">
+                <li class="badge badge--learning">React</li>
+                <li class="badge badge--learning">TypeScript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ JOURNEY (signature) ============ -->
+      <section class="section" id="journey">
+        <div class="section-inner section-inner--narrow">
+          <p class="eyebrow mono">04 — Building in Public</p>
+          <h2 class="section-title">Learning journey</h2>
+
+          <div
+            class="commit-log"
+            role="list"
+            aria-label="Learning journey commit log"
+          >
+            <p class="commit-year mono">2026</p>
+
+            <div class="commit commit--done" role="listitem">
+              <span class="commit-mark" aria-hidden="true">✓</span>
+              <span class="commit-msg">HTML &amp; CSS fundamentals</span>
+            </div>
+            <div class="commit commit--done" role="listitem">
+              <span class="commit-mark" aria-hidden="true">✓</span>
+              <span class="commit-msg">Responsive layouts</span>
+            </div>
+            <div class="commit commit--done" role="listitem">
+              <span class="commit-mark" aria-hidden="true">✓</span>
+              <span class="commit-msg">JavaScript fundamentals</span>
+            </div>
+            <div class="commit commit--done" role="listitem">
+              <span class="commit-mark" aria-hidden="true">✓</span>
+              <span class="commit-msg"
+                >First JavaScript project — Calculator</span
+              >
+            </div>
+
+            <div class="commit commit--done" role="listitem">
+              <span class="commit-mark" aria-hidden="true">✓</span>
+              <span class="commit-msg">Todo App + Local Storage</span>
+            </div>
+            <div class="commit commit--done" role="listitem">
+              <span class="commit-mark" aria-hidden="true">✓</span>
+              <span class="commit-msg">APIs</span>
+            </div>
+            <div class="commit commit--done" role="listitem">
+              <span class="commit-mark" aria-hidden="true">✓</span>
+              <span class="commit-msg">Weather app</span>
+            </div>
+            <div class="commit commit--done" role="listitem">
+              <span class="commit-mark" aria-hidden="true">✓</span>
+              <span class="commit-msg">Github user founder</span>
+            </div>
+            <div class="commit commit--queued" role="listitem">
+              <span class="commit-mark" aria-hidden="true">→</span>
+              <span class="commit-msg">TypeScript</span>
+            </div>
+            <div class="commit commit--queued" role="listitem">
+              <span class="commit-mark" aria-hidden="true">→</span>
+              <span class="commit-msg">React</span>
+            </div>
+            <div class="commit commit--queued" role="listitem">
+              <span class="commit-mark" aria-hidden="true">→</span>
+              <span class="commit-msg">Dashboard project</span>
+            </div>
+
+            <div class="commit commit--cursor" aria-hidden="true">
+              <span class="commit-mark commit-cursor">_</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ GITHUB CTA ============ -->
+      <section class="section section--flush">
+        <div class="github-band">
+          <div class="github-band-inner">
+            <div>
+              <h2 class="github-title">
+                Built with code, not just screenshots.
+              </h2>
+              <p class="github-sub">
+                Explore my projects, experiments, and learning progress on
+                GitHub.
+              </p>
+            </div>
+            <a
+              href="https://github.com/arvo-parham"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary"
+            >
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.77 10.78.57.1.78-.25.78-.55v-2.15c-3.16.69-3.82-1.36-3.82-1.36-.52-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.73.4-1.24.72-1.53-2.52-.28-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.57.23 2.73.11 3.02.73.79 1.17 1.8 1.17 3.04 0 4.35-2.66 5.31-5.19 5.59.41.35.77 1.04.77 2.1v3.11c0 .3.2.65.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"
+                />
+              </svg>
+              View GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="section" id="contact">
+        <div class="section-inner section-inner--narrow contact">
+          <p class="eyebrow mono">05 — Contact</p>
+          <h2 class="section-title">Have a project in mind?</h2>
+          <p class="contact-sub">Let's build something useful.</p>
+
+          <div class="contact-actions">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=arvoparham@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+              >Email Me</a
+            >
+            <a
+              href="https://instagram.com/arvoparham"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-ghost"
+              >Instagram</a
+            >
+            <a
+              href="https://github.com/arvo-parham"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-ghost"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/arvo-parham"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-ghost"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img
+            src="assets/logo-64.png"
+            alt="ARVO"
+            class="footer-logo-mark"
+            width="32"
+            height="32"
+          />
+          <div>
+            <p class="footer-logo">ARVO</p>
+            <p class="footer-role mono">Frontend Developer</p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a
+            href="https://github.com/arvo-parham"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <a
+            href="https://instagram.com/arvoparham"
+            target="_blank"
+            rel="noopener"
+            >Instagram</a
+          >
+          <a
+            href="https://www.linkedin.com/in/arvo-parham"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=arvoparham@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Email</a
+          >
+        </div>
+      </div>
+      <p class="footer-copy mono">© 2026 ARVO. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

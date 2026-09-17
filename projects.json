@@ -1,0 +1,145 @@
+[
+  {
+    "slug": "calculator",
+    "name": "JavaScript Calculator",
+    "description": "A working calculator built from scratch to practice core JavaScript: handling input, managing state, and updating the DOM in response to events.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "demoUrl": "#",
+    "codeUrl": "https://github.com/Arvo-parham/Calculator",
+    "preview":"calculator",
+    "next": "Todo App with Local Storage",
+    "caseStudy": {
+      "problem": "I wanted a project that would force me to work with real user input instead of static data — something where I had to track state as the user interacts with the page, not just render content once. A calculator is small enough to finish, but has enough edge cases to actually be useful practice.",
+      "approach": "Before writing any code, I wrote out the problem in plain language: what the inputs were (button clicks, keyboard input), what state I needed to track (current value, previous value, selected operator), and what the display should show at each step. I sketched the logic as pseudocode first, then built the interface, then wired up behavior incrementally — testing each piece with console.log before moving to the next.",
+      "implementation": [
+        "A button grid built with semantic HTML and data- attributes to identify each key's role (number, operator, clear, equals).",
+        "A single addEventListener on the button container, using event delegation and e.target to figure out which key was pressed.",
+        "A small set of state variables (current input, stored value, active operator) instead of scattering logic across many functions.",
+        "Separate functions for each responsibility — updating the display, performing the calculation, and resetting state — so the logic stayed easy to follow."
+      ],
+      "challenges": "The hardest part was handling button behavior correctly depending on context — for example, what should happen if the user presses an operator twice in a row, or presses equals with no second number entered. I also had to think carefully about when the display should reset versus when it should keep appending digits, since getting that wrong made the calculator feel broken even when the math itself was correct.",
+      "learned": "This project made state management click for me in a way that smaller exercises hadn't. I got much more comfortable with querySelector, addEventListener, and reading the event object to figure out what happened and respond to it. It also reinforced the value of planning with pseudocode before writing code — the parts I sketched out ahead of time went smoothly, and the parts I skipped planning for were where most of the bugs showed up.",
+      "result": "A functioning calculator that handles the standard operations, basic error cases like division by zero, and continuous calculations without needing a page reload. It's a small project, but it's fully my own logic from the ground up — and it set the foundation for the next one: a Todo App with Local Storage."
+    }
+  },
+  {
+  "slug": "todo-app-local-storage",
+  "name": "Todo App with Local Storage",
+  "description": "A persistent Todo application built with Vanilla JavaScript to practice state management, CRUD operations, DOM manipulation, and browser storage.",
+  "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Local Storage"
+    ],
+  "demoUrl": "#",
+  "codeUrl": "https://github.com/Arvo-parham/todo-app",
+  "preview":"todo",
+  "next": "JavaScript API Project",
+
+  "caseStudy": {
+    "problem": "After building a calculator, I wanted a project that would introduce real application data and persistence. I needed something where users could create, update, and delete data, while the application kept its state between page refreshes. A Todo App provided a simple way to practice these concepts without hiding the underlying logic behind a framework or library.",
+
+    "approach": "I broke the application into a small set of core operations: creating a Todo, rendering it, changing its completed state, deleting it, saving the current data, and loading saved data when the application starts. I treated the Todo data as the source of truth and designed the UI to reflect that state. This gave the project a clear flow: user action → update state → save data → render UI.",
+
+    "implementation": [
+        "Todo items are represented as JavaScript objects containing an id, text, and completed state.",
+        "An array of Todo objects is used to represent the application's current state.",
+        "DOM elements are generated dynamically from the current Todo data instead of being hardcoded in HTML.",
+        "Event listeners handle adding, completing, and deleting Todo items.",
+        "Local Storage is used to persist the Todo array between browser sessions.",
+        "JSON.stringify() and JSON.parse() are used to convert Todo data between JavaScript objects and the string format required by Local Storage."
+      ],
+
+    "challenges": "The biggest challenge was keeping the application's state, UI, and Local Storage synchronized. Removing a Todo from the DOM is not enough because the underlying data also needs to change. I had to think about each user action as a state change and make sure that change was reflected everywhere. This shifted my thinking from simply manipulating HTML elements to managing application data.",
+
+    "learned": "This project gave me a much stronger understanding of arrays of objects, DOM manipulation, event handling, CRUD operations, JSON, Local Storage, and basic state management. More importantly, I started to understand that interactive applications are built around data and state, with the UI acting as a representation of that state.",
+
+    "result": "A functional Todo application that allows users to create, complete, and delete tasks while persisting their data through Local Storage. Compared to my first JavaScript project, this application required more structured thinking about state, data, and synchronization, giving me a stronger foundation for building more complex applications.",
+
+    "nextStep": "The next project will introduce external APIs and asynchronous JavaScript, moving from local application data to working with real-world external data."
+    }
+  },
+  {
+  "slug": "weather-app",
+  "name": "JavaScript Weather App",
+  "description": "A weather application built with Vanilla JavaScript that fetches real-time weather data from an external API and dynamically updates the UI based on user input.",
+  "tech": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Fetch API",
+    "Async/Await",
+    "REST API"
+  ],
+  "demoUrl": "#",
+  "codeUrl": "https://github.com/Arvo-parham/weather-app",
+  "preview":"weather",
+  "next": "Next JavaScript Project",
+
+  "caseStudy": {
+    "problem": "After building a Calculator and a Todo App with Local Storage, I wanted my third JavaScript project to introduce external data and asynchronous programming. I wanted to build something where the application had to communicate with a real service, wait for a response, process remote data, and then update the interface based on that data. A Weather App provided a practical way to combine these concepts in one project.",
+
+    "approach": "I broke the application into a simple flow: receive a city from the user, create an API request, wait for the response, parse the returned JSON, extract the required weather information, and update the UI. I built the interface first, connected it to the API afterward, and then added validation and error handling for unsuccessful requests.",
+
+    "implementation": [
+      "A search interface allows users to enter a city and request its weather information.",
+      "The Fetch API is used to communicate with an external weather service.",
+      "Async/Await is used to handle the asynchronous request flow.",
+      "The API response is parsed as JSON and the required weather data is extracted.",
+      "The DOM is updated dynamically based on the returned API data.",
+      "Input validation prevents empty or invalid searches from creating unnecessary requests.",
+      "Error handling provides feedback when a city cannot be found or the API request fails."
+    ],
+
+    "challenges": "The biggest challenge was understanding asynchronous JavaScript. Unlike my previous projects, the required data was not immediately available inside the application. I had to understand how Promises work, how async/await handles asynchronous operations, and how to handle both successful and failed requests. Another challenge was understanding the structure of the API response and extracting only the information required by the application.",
+
+    "learned": "This project gave me practical experience with the Fetch API, REST APIs, Promises, Async/Await, JSON, API response handling, asynchronous programming, DOM manipulation, and error handling. More importantly, I learned how a frontend application can communicate with an external service and transform remote data into an interactive user experience.",
+
+    "result": "A functional Weather App that allows users to search for a city and receive weather information from a real external API. This project became the next step after my Calculator and Todo App, moving my JavaScript experience from DOM interactions and local state to external data and asynchronous programming."
+  }
+},
+{
+  "slug": "github-user-finder",
+  "name": "GitHub User Finder",
+  "description": "A GitHub profile search application built with Vanilla JavaScript that uses the GitHub API to fetch and dynamically display public user information.",
+  "tech": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Fetch API",
+    "Async/Await",
+    "REST API"
+  ],
+  "demoUrl": "#",
+  "codeUrl": "https://github.com/Arvo-parham/github-user-founder",
+  "preview":"github",
+  "next": "Next JavaScript Project",
+
+  "caseStudy": {
+    "problem": "After building a Calculator, a Todo App with Local Storage, and a Weather App using an external API, I wanted my fourth project to combine what I had learned while working with a larger and more structured data source. I wanted to build an application where the user could search for real data, process an API response, select the information that mattered, and turn it into a useful interface. A GitHub User Finder provided a practical way to work with structured API data while continuing to strengthen my asynchronous JavaScript skills.",
+
+    "approach": "I designed the application around a simple flow: receive a GitHub username, validate the input, send a request to the GitHub API, wait for the response, parse the returned JSON, extract the relevant profile information, and render it in the UI. I separated the process into smaller responsibilities so that API communication, data processing, error handling, and UI updates were easier to understand and maintain.",
+
+    "implementation": [
+      "A search form accepts a GitHub username and uses it to construct the API request.",
+      "The Fetch API is used to communicate with the GitHub REST API.",
+      "Async/Await is used to handle the asynchronous request and response flow.",
+      "The returned JSON data is processed and only the relevant profile properties are used by the application.",
+      "The DOM is updated dynamically to display information such as the user's avatar, name, bio, followers, following, repository count, location, and profile link.",
+      "Input validation and error handling provide feedback when a username is invalid, a user cannot be found, or the request fails.",
+      "The interface handles different application states such as loading, successful results, and errors."
+    ],
+
+    "challenges": "The biggest challenge was working with a larger and more structured API response. The GitHub API provides many properties, but the interface only needs a subset of them. I had to understand the response structure and decide which data was relevant. Another challenge was thinking about the different states of an API-driven application instead of assuming every request would succeed. This meant considering loading, success, and error states as part of the application's normal behavior.",
+
+    "learned": "This project strengthened my understanding of Fetch API, REST APIs, Promises, Async/Await, JSON, API response handling, DOM manipulation, form handling, input validation, dynamic rendering, and error handling. I also became more comfortable reading API documentation and working out how external data should be transformed into a useful frontend experience.",
+
+    "result": "A functional GitHub User Finder that allows users to search for GitHub accounts and explore their public profile information. Compared to the Weather App, this project required me to work with a larger data structure and think more carefully about data selection and application states. It made API integration feel more natural and prepared me for building more complex frontend applications."
+  }
+}
+]
