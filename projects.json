@@ -157,6 +157,7 @@
   ],
   "demoUrl": "#",
   "codeUrl": "https://github.com/Arvo-parham/Shop-explorer",
+  "preview":"shop",
   "next": "Next JavaScript Project",
   "caseStudy": {
     "problem": "After building projects focused on DOM manipulation, state management, asynchronous JavaScript, and API consumption, I wanted to combine these concepts into a more complete frontend application.",
