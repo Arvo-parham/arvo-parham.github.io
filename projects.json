@@ -141,5 +141,40 @@
 
     "result": "A functional GitHub User Finder that allows users to search for GitHub accounts and explore their public profile information. Compared to the Weather App, this project required me to work with a larger data structure and think more carefully about data selection and application states. It made API integration feel more natural and prepared me for building more complex frontend applications."
   }
+},
+  {
+  "slug": "shop-explorer",
+  "name": "Shop Explorer",
+  "description": "A shopping experience built with Vanilla JavaScript that fetches products from an external API and allows users to filter, sort, and manage products in a persistent shopping cart.",
+  "tech": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Fetch API",
+    "Async/Await",
+    "REST API",
+    "Local Storage"
+  ],
+  "demoUrl": "#",
+  "codeUrl": "https://github.com/Arvo-parham/Shop-explorer",
+  "next": "Next JavaScript Project",
+  "caseStudy": {
+    "problem": "After building projects focused on DOM manipulation, state management, asynchronous JavaScript, and API consumption, I wanted to combine these concepts into a more complete frontend application.",
+    "approach": "I built a shopping interface that fetches product data from an external API, stores it in JavaScript state, and allows users to filter, sort, and add products to a persistent cart.",
+    "implementation": [
+      "Fetched product data from the DummyJSON Products API",
+      "Rendered product cards dynamically",
+      "Implemented category filtering",
+      "Implemented sorting by price, rating, and name",
+      "Built cart state management",
+      "Persisted cart data using Local Storage",
+      "Implemented add and remove cart interactions",
+      "Used event delegation for dynamically generated elements",
+      "Added API error handling"
+    ],
+    "challenges": "Combining API data, application state, filtering, sorting, dynamic rendering, and Local Storage while keeping the different parts of the application working together.",
+    "learned": "I strengthened my understanding of Fetch API, Async/Await, REST APIs, JSON, array methods, state management, DOM manipulation, event delegation, and Local Storage.",
+    "result": "A functional shopping experience that combines external API data, interactive product management, filtering, sorting, and persistent cart state in one frontend application."
+  }
 }
 ]
