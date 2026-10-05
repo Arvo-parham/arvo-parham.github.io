@@ -190,6 +190,39 @@ function projectPreviewHTML(p) {
     </div>
   `;
 
+    case "shop":
+      return:
+        `
+        <div class="mock-screen shop-preview">
+  <div class="mock-topbar">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="shop-header">
+    <span>Shop Explorer</span>
+    <span>🛒</span>
+  </div>
+
+  <div class="shop-controls">
+    <span>All</span>
+    <span>Price ↑</span>
+  </div>
+
+  <div class="product-grid">
+    <span>👟</span>
+    <span>🎧</span>
+    <span>⌚</span>
+    <span>📷</span>
+  </div>
+
+  <div class="cart-bar">
+    🛒 Cart
+  </div>
+</div>
+        `
+
     default:
       return `
         <div class="mock-screen">
