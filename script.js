@@ -191,8 +191,7 @@ function projectPreviewHTML(p) {
   `;
 
     case "shop":
-      return:
-        `
+      return `
         <div class="mock-screen shop-preview">
   <div class="mock-topbar">
     <span></span>
@@ -221,7 +220,7 @@ function projectPreviewHTML(p) {
     🛒 Cart
   </div>
 </div>
-        `
+`;
 
     default:
       return `
